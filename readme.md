@@ -117,3 +117,6 @@ Modificación SSD-3
 Modificación SSD-2
 Modificación SSD-2 11:15PM
 Modificación SSD-2 11:25PM
+
+
+Agrega registro de usuarios
