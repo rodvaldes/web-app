@@ -109,14 +109,3 @@ La aplicación de ejemplo Spring PetClinic se lanza bajo la versión 2.0 de [Apa
 [spring-petclinic-graphql]: https://github.com/spring-petclinic/spring-petclinic-graphql
 [spring-petclinic-kotlin]: https://github.com/spring-petclinic/spring-petclinic-kotlin
 [spring-petclinic-rest]: https://github.com/spring-petclinic/spring-petclinic-rest
-
-
-
-Modificación DES-1
-Modificación SSD-3
-Modificación SSD-2
-Modificación SSD-2 11:15PM
-Modificación SSD-2 11:25PM
-Modificación APW-7
-sdfasdfasdf
-asdfasddfasdf

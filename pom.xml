@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cybersyn.demo</groupId>
   <artifactId>web-spring-demo</artifactId>
-  <version>0.0.1.BUILD-SNAPSHOT</version>
+  <version>0.1</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
