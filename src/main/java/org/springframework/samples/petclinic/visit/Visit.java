@@ -50,7 +50,7 @@ public class Visit extends BaseEntity {
     private Integer petId;
 
     /**
-     * Creates a new instance of Visit for the current date
+     * Crea una nueva instancia de Visita con la fecha Actual.
      */
     public Visit() {
         this.date = new Date();
