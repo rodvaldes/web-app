@@ -10,9 +10,17 @@
 	./mvnw spring-boot:run
 ```
 
-Luego se puede acceder a la aplicación en: http://localhost:8080/
+Luego se puede acceder a la aplicación en: http://localhost:18082/
 
 <img width="1042" alt="petclinic-screenshot" src="https://cloud.githubusercontent.com/assets/838318/19727082/2aee6d6c-9b8e-11e6-81fe-e889a5ddfded.png">
+
+## Publicar app en contenedor docker
+
+```
+docker build --tag web-app:1.0 .
+docker run --publish 8000:18082 --detach --name web-app web-app:1.0
+docker run --publish 8000:18082 --name web-app web-app:1.0
+```
 
 
 ## Configuración de Base de Datos
