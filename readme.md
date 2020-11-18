@@ -8,7 +8,22 @@
 	git clone git@github.com:roxtrongo/web-app.git
 	cd web-app
 	./mvnw spring-boot:run
+    
 ```
+
+
+```
+mvn package
+java -jar target/web-spring-demo-0.1.jar
+```
+
+java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr MyApp
+
+java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr -jar web-spring-demo-0.1.jar
+
+java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr -jar target/web-spring-demo-0.1.jar
+
+
 
 ### Modificar JAVA_HOME
 
@@ -26,6 +41,8 @@
 
     ## Para JDK 8
     export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home
+
+   
     
 ```
 
@@ -41,6 +58,13 @@ docker build --tag web-app:1.0 .
 docker run --publish 8000:18082 --detach --name web-app web-app:1.0
 docker run --publish 8000:18082 --name web-app web-app:1.0
 ```
+
+docker build --tag web-app-docker:1.0 .
+
+docker run -ti f4775b438c36
+
+docker run --publish 8000:18082 --name web-app web-app-docker:1.0
+
 
 
 ## Configuración de Base de Datos
