@@ -11,21 +11,20 @@
     
 ```
 
+## Ejecución Manual
 
 ```
 mvn package
 java -jar target/web-spring-demo-0.1.jar
+java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr -jar target/web-spring-demo-0.1.jar
 ```
 
-java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr MyApp
-
-java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr -jar web-spring-demo-0.1.jar
-
-java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr -jar target/web-spring-demo-0.1.jar
 
 
 
-### Modificar JAVA_HOME
+
+### Modificar JAVA_HOME 
+# TODO Buscar una manera "mas mejor"  
 
 ```
     rvaldes@MBP-de-Rodrigo  ~/Desarrollo/helidon-quickstart-se  /usr/libexec/java_home -V
@@ -59,12 +58,11 @@ docker run --publish 8000:18082 --detach --name web-app web-app:1.0
 docker run --publish 8000:18082 --name web-app web-app:1.0
 ```
 
+```
 docker build --tag web-app-docker:1.0 .
-
 docker run -ti f4775b438c36
-
 docker run --publish 8000:18082 --name web-app web-app-docker:1.0
-
+```
 
 
 ## Configuración de Base de Datos
