@@ -1,7 +1,6 @@
 # Aplicación Spring Java de ejemplo.
 
-## Comprendiendo la aplicación Spring-Pet a partir de unos pocos diagramas.
-<a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">Ver aquí la presentación</a>
+Esta es una aplicación web Java en spring boot.
 
 ## Ejecutar la aplicación de manera local
 ```
@@ -18,8 +17,6 @@ mvn package
 java -jar target/web-spring-demo-0.1.jar
 java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr -jar target/web-spring-demo-0.1.jar
 ```
-
-
 
 
 
